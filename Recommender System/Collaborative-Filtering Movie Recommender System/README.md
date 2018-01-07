@@ -31,12 +31,6 @@ Memory-Based Collaborative Filtering approaches can be divided into two main sec
 * *Item-Item Collaborative Filtering*: “Users who liked this item also liked …”
 * *User-Item Collaborative Filtering*: “Users who are similar to you also liked …”
 
-In both cases, create a user-item matrix which built from the entire dataset.
-
-Since we have split the data into testing and training we will need to create two ``[943 x 1682]`` matrices (all users by all movies). 
-
-The training matrix contains 75% of the ratings and the testing matrix contains 25% of the ratings.  
-
 The distance metric in recommender system is *cosine similarity*, where the ratings are seen as vectors in ``n``-dimensional space and the similarity is calculated based on the angle between these vectors. 
 
 
