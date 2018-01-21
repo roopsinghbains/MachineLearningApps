@@ -35,7 +35,7 @@ import seaborn as sns
 
 ```
 
-Plot seabron joint plot of Time spent and age
+Plot seaborn joint plot of Time spent and age
 
 ```
 sns.jointplot(x='Age', y='Daily Time spent on Site', data=ad_data;kind='kde')
@@ -56,7 +56,7 @@ logisticmodel = LogisticRegression()
 logisticmodel.fit(X_train,y_train)
 ```
 
-## Predcitions and Evaluation
+## Predictions and Evaluation
 
 ```
 predictions = logisticmodel.predict(X_test)
