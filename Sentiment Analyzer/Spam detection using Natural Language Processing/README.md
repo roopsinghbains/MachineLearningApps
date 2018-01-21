@@ -5,13 +5,13 @@
 Building a spam detection filter using Natural Language Processing techniques utilizing NLTK library.
 The alogrithm used for performing the classfication task is naive bayes. 
 
-# Data 
+## Data 
 
 The data can be obtained from the UCI Machine learning Respoitory.
 https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection
 
 
-# Usage
+## Usage
 
 The Data for spam filtering (from URL above) is in tab separated format.
 
@@ -51,25 +51,27 @@ from sklearn.naive_bayes import MultinomialNB
 
 #### Implementation overview
 
-1. 
 
-# fit the above imported modules to desired feature.
+## Fit the above imported modules to desired feature.
 
+#### Transformation library usage sample snippet
+```
 phase1_featuretransformer = first_TransformInstance.fit(raw_feature)
 phase1_transformed_Features = phase1_featuretransformer.transform(raw_feature)
 
+```
+
 Similarly perform further transformations based on data and business problem.
+
+### Transforming
 ```
 tfidfTransformer = tfidfTransformerInstance.fit(data_feature)
-
-# Transforming
 
 feature = transformed_feature.transform(data_feature)
 ```
 
+### Apply naive bayes
 ```
-# Apply naive bayes
-
 spam_detection_model = MultinomialNB.fit(feature,label)
 
 ```
